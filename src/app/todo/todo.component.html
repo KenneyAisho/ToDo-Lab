@@ -1,0 +1,7 @@
+<div>
+  <h1>TODO List</h1>
+  <section *ngFor='let list of post' class='todo-list' [ngClass]='{complete: list.complete}'>
+    <h3>{{list.task}}</h3>
+
+  </section>
+</div>
