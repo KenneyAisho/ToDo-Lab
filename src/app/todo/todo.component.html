@@ -1,9 +1,17 @@
 <div>
   <h1>TODO List</h1>
   <h4>A place to store your todos</h4>
-  <section *ngFor='let list of post' class='todo-list' [ngClass]='{complete: list.complete}'>
-    <h4><button id="complete">Complete</button> {{list.task}}<button id="x">X</button></h4>
-
+  <section>
+    <ol>
+      <li
+        *ngFor="let list of post"
+        class="todo-list"
+        [ngClass]="{ complete: list.complete }"
+      >
+        <button id="complete">Complete</button> {{ list.task }}
+        <button id="x">X</button>
+      </li>
+    </ol>
   </section>
   <p>Add your Todo</p>
   <button id="add">Add</button>
