@@ -37,3 +37,7 @@ div {
 .complete {
   text-decoration: line-through;
 }
+
+input {
+  width: 30%;
+}

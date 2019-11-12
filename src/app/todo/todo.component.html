@@ -1,6 +1,6 @@
 <div>
   <h1>TODO List</h1>
-  <h4>A place to store your todos</h4>
+  <!-- <h4>A place to store your todos</h4> -->
   <section>
     <ol>
       <li *ngFor="let list of post; index as i" class="todo-list" [ngClass]="{ complete: list.complete }">
@@ -10,6 +10,9 @@
       </li>
     </ol>
   </section>
-  <p>Add your Todo</p>
-  <button id="add">Add</button>
+  <form (ngSubmit)="addTask()">
+    <label for="addTodo">Add your Todo: </label>
+    <input [(ngModel)]="newPost.task" name="task" id="addTodo" name="addTodo" />
+    <button type="submit" id="add">Add</button>
+  </form>
 </div>
