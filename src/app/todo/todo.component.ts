@@ -15,8 +15,7 @@ export class TodoComponent implements OnInit {
     { task: "pet dog", complete: false },
     { task: "be awesome", complete: false },
     { task: "lift weights", complete: false },
-    { task: "lift weights", complete: false },
-    { task: "lift weights", complete: false }
+    { task: "lift more weights", complete: false }
   ];
 
   newPost: Todo = {
