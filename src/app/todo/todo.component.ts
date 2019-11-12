@@ -20,4 +20,15 @@ export class TodoComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  completeTask(index: number): void {
+    let completed = this.post[index];
+    completed.complete = !completed.complete;
+  }
+
+  removeTask(index: number): void {
+    let hidden = this.post[index];
+    hidden.task = '';
+    hidden.complete = true;
+  }
 }

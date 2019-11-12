@@ -33,3 +33,7 @@ div {
   border-radius: 5px;
   width: 95%;
 }
+
+.complete {
+  text-decoration: line-through;
+}
